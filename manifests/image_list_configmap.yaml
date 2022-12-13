@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: image-list-configmap
+  labels:
+    app.kubernetes.io/part-of: image-cache-daemon
+data:
+  images: |
+    ["releases-docker.jfrog.io/jfrog/pipelines-dind:0.0.0-m000", "releases-docker.jfrog.io/jfrog/pipelines-reqkick:0.0.0-m000"]
